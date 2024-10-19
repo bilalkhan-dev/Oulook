@@ -1,0 +1,16 @@
+{
+  "name": "Outlook",
+  "short_name": "Outlook",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#2563eb",
+  "background_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "Outlook.com-logo.wine.png",
+      "sizes": "515x512",
+      "type": "image/png"
+    },
+    
+  ]
+}
