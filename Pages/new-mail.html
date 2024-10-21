@@ -1,59 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" translate="no" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css' >
     <title>Document</title>
-    
-
-    <style>
-        *
-        {
-            margin: 0;
-            padding: 0;
-
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        html,body
-        {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        div
-        {
-            background: linear-gradient(10deg, rgba(235, 18, 170, 0.637) , rgba(245, 245, 12, 0.486) , rgba(2, 255, 2, 0.808));
-            background-clip: text;
-            background-size: 400%;
-            animation: animate 7s linear infinite;
-        }
-
-        @keyframes animate{
-            100%{
-                background-position: 400%;
-            }
-        }
-
-        div h1
-        {
-            font-size: 400%;
-            background: transparent;
-            -webkit-text-fill-color: transparent;
-        }
-
-        
-
-    </style>
-
 </head>
-<body>
+<body class="bg-white">
 
-    <div class="text">
-        <h1><span>B</span>ilal Khan</h1>
-    </div>
+
+    <!-- Main section -->
+    <main class="h-screen">
+        <!-- Acccount info section -->
+        <section aria-label="Account holder section" class="bg-blue-600 flex items-center gap-x-5 pt-5 pb-1 pl-4
+                                                              he">
+            <div aria-label="Cancel / back to home" class="">
+                <svg class="w-5" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24"><path d="M23.707.293h0a1,1,0,0,0-1.414,0L12,10.586,1.707.293a1,1,0,0,0-1.414,0h0a1,1,0,0,0,0,1.414L10.586,12,.293,22.293a1,1,0,0,0,0,1.414h0a1,1,0,0,0,1.414,0L12,13.414,22.293,23.707a1,1,0,0,0,1.414,0h0a1,1,0,0,0,0-1.414L13.414,12,23.707,1.707A1,1,0,0,0,23.707.293Z"/>
+                </svg>
+            </div>
+
+            <div class="*:inline-block flex items-center gap-x-2">
+               <p class=" bg-yellow-700 w-8 h-8 rounded-full text-white font-normal text-lg text-center">
+                B
+               </p>
+
+                <div class=" *:text-white *:leading-5">
+                    <h1 class="text-lg font-bold">New Message</h1>
+                    <p class="text-sm font-thin">BilalMohmand2244@savy.com</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Input/message section -->
+        <section aria-label="mail writting section" class="h-full">
+            <!-- Form -->
+            <form>
+                <input type="checkbox" >
+            </form>
+           
+        </section>
+
+        <!-- Editing section -->
+        <section aria-label="text Editing section">
+
+        </section>
+    </main>
+    
     
 </body>
 </html>
