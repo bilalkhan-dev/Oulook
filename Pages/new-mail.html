@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html>
@@ -47,6 +48,8 @@
      display: flex;
      justify-content: center;
      flex-direction: column;
+     
+     height: 100vh;
    }
   
    form input{
@@ -72,6 +75,7 @@
    form label{
      font-size: 1.4rem;
      font-weight: 500;
+     
    }
   
    .f-name, .address{
@@ -80,12 +84,12 @@
   
    
    label sup{
-     color: green;
+     color: red;
    }
   
    #address{
      width: 90%;
-     height: 50vh;
+     flex-grow: 3;
      caret-position: start;
    }
   
@@ -107,7 +111,7 @@
   </header>
   
   <main>
-    <form action="" method="post">
+    <form action="" method="post" style="display: flex">
       <label for="name">Name<sup>*</sup></label> 
       <input type="text" id="name" autocomplete="name" autofocus="ture" autocapitalize="on" required="yes"> 
       
