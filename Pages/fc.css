@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.exo-<uniquifier> {
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 ::-webkit-scrollbar {
   width: 3px;  height: 1px;
 }
@@ -275,6 +285,8 @@ header img
     text-align: start;
     margin-top: 4px;
     margin-right: 13px;
+
+    font-family: "Exo", sans-serif;
 }
 
 .comment-text-container h3
