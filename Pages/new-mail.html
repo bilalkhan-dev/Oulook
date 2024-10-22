@@ -84,10 +84,24 @@
   
    #address{
      width: 90%;
-     height: 100vh;
+     height: 50vh;
+     caret-position: start;
+   }
+  
+   img{
+     width: 150px;
    }
   
   </style>
+  
+  <script>
+   
+
+const addressInput = document.getElementById('address');
+addressInput.focus(() => addressInput.setSelectionRange(0, 0));
+
+
+  </script>
   
 </head>
 <body style="overflow: auto;">
