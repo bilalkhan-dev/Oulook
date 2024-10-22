@@ -9,6 +9,7 @@
   *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
   
    header{
@@ -20,7 +21,7 @@
      height: 40px;
      
      padding-top: 20px;
-     padding-bottom: 10px;
+     padding-bottom: 25px;
      border-bottom: 1px solid lightgreen;
      
      background: white;
@@ -94,17 +95,10 @@
   
   </style>
   
-  <script>
-   
+ 
 
-const addressInput = document.getElementById('address');
-addressInput.focus(() => addressInput.setSelectionRange(0, 0));
-
-
-  </script>
-  
 </head>
-<body style="overflow: auto;">
+<body style="overflow-visible">
   
   <header>
     <img src="a.png">
