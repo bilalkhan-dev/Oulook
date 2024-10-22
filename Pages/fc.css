@@ -5,42 +5,6 @@
     box-sizing: border-box;
 }
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.exo-<uniquifier> {
-  font-family: "Exo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-::-webkit-scrollbar {
-  width: 3px;  height: 1px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: transparent;
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #fff;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(transparent, #00ff40);
-}
-
-::-webkit-scrollbar-button {
-  background: #fff;
-}
-
-::-webkit-scrollbar-corner {
-  background: #fff;
-}
-
-
 body
 {
    
@@ -200,7 +164,6 @@ header img
 {
     max-width: 100%;
     overflow-x: auto;
-    scroll-behavior: smooth;
     
     display: flex;
     align-items: center;
@@ -274,19 +237,17 @@ header img
     padding-right: 7px;
     padding-bottom: 10px;
 
-    width: 95%;
+    width: 90%;
 }
 
 .comment-text-container p
 {
     font-weight: 100;
-    font-size: 0.92rem;
+    font-size: 0.8rem;
 
-    text-align: start;
+    text-align: justify;
     margin-top: 4px;
     margin-right: 13px;
-
-    font-family: "Exo", sans-serif;
 }
 
 .comment-text-container h3
@@ -312,4 +273,65 @@ header img
     margin-left: 12px;
 
     margin-bottom: 18px;
+}
+
+/*                     Bottom piece of of shit                  */
+.comment-input-container
+{
+    background: #FFF;
+    width: 100%;
+    border-top: 1px solid rgba(220, 220, 220, 0.644);
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding-bottom: 15px;
+    padding-top: 9px;
+
+    
+}
+
+.comment-input-container .comment-input-wrapper
+{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin: 0 13px;
+}
+
+.comment-input-container input
+{
+    flex-grow: 1;
+    background: none;
+
+    border: none;
+
+    font-size: 0.98rem;
+}
+
+.comment-input-container input:focus
+{
+    outline: none;
+}
+
+.comment-input-container img
+{
+    width: 1.8rem;
+    text-align: center;
+}
+
+.input-area
+{
+    background: #c9c4c488;
+    border-radius: 20px;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 4px 11px;
 }
