@@ -5,9 +5,13 @@
     box-sizing: border-box;
 }
 
+html{
+     height: -webkit-fill-available;
+}
+
 body
 {
-   
+     height: -webkit-fill-available;  
 }
 
 /*                           Header                              */
