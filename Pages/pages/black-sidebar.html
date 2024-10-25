@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style89.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+}
+
+.sidebar-container{
+    position: relative;
+   
+}
+
+.sidebar-container .back-home-container{
+    position: sticky;
+    top: 0;
+    
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+}
+
+/* #back-home:checked + section{
+    display: none;
+} */
+
+.back-home-container svg{
+    width: 20px;
+    fill: white;
+
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.sidebar-container h1{
+    font-weight: 700;
+}
+
+.optional-line{
+    width: 25px;
+    height: 2px;
+    border-radius: 20px;
+    
+    background: linear-gradient(300deg, rgba(0, 0, 255, 0.774),rgba(255, 255, 0, 0.733), rgba(255, 255, 255, 0.932));
+}
+
+.other-links{
+   
+}
+
+.sidebar-content{
+    margin: 20px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 45px;
+}
+
+.loginup-links li{
+    padding-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.other-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    font-size: 0.9rem;
+}
+
+.other-links ul a{
+    font-weight: 400;
+}
+
+#back-home{
+    display: none;
+}
+
+@media (min-width: 540px){
+    .sidebar-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+
+<body >
+
+    <!-- Right side - side bar -->
+    <input type="checkbox" id="back-home" value="" name="" >
+    <section class="sidebar-container" style="background: black; height: 100vh;">
+        <!-- Cancel Icon container -->
+        <div class="back-home-container">
+            <label for="back-home" aria-label="back to home">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" ><path d="M23.707.293h0a1,1,0,0,0-1.414,0L12,10.586,1.707.293a1,1,0,0,0-1.414,0h0a1,1,0,0,0,0,1.414L10.586,12,.293,22.293a1,1,0,0,0,0,1.414h0a1,1,0,0,0,1.414,0L12,13.414,22.293,23.707a1,1,0,0,0,1.414,0h0a1,1,0,0,0,0-1.414L13.414,12,23.707,1.707A1,1,0,0,0,23.707.293Z"/>
+                </svg>
+            </label>
+        </div>
+
+        <!-- Side Bar content-->
+        <div class="sidebar-content" >
+            <!-- Sign in sign up section -->
+            <section class="loginup-links">
+                <ul>
+                    <li>
+                        <h1>Login</h1>
+                    </li>
+                    <li>
+                        <h1>Sign Up</h1>
+                    </li>
+                </ul>
+            </section> <div class="optional-line"></div>
+
+            <!-- Other links -->
+            <section class="other-links">
+                <ul>
+                    <li>
+                        <a href="#">Premium</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Download</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </section>
+    
+</body>
+</html>
