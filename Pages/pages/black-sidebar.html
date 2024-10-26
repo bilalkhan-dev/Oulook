@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <meta name="theme-color" content="#000">
     <link rel="stylesheet" href="style89.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,13 +19,17 @@
     color: white;
 }
 
+html, body{
+    height: -webkit-fill-available;
+    background-color: black;
+}
+
 li{
     list-style-type: none;
 }
 
 .sidebar-container{
     position: relative;
-   
 }
 
 .sidebar-container .back-home-container{
@@ -52,18 +55,19 @@ li{
 
 .sidebar-container h1{
     font-weight: 700;
-    font-size: 1.5rem;
 }
 
 .optional-line{
-    width: 30px;
+    width: 25px;
     height: 2px;
+    border-radius: 20px;
     
     background: linear-gradient(300deg, rgba(0, 0, 255, 0.774),rgba(255, 255, 0, 0.733), rgba(255, 255, 255, 0.932));
 }
 
 .other-links{
-   
+   max-height: 350px;
+   overflow: auto;
 }
 
 .sidebar-content{
@@ -72,6 +76,7 @@ li{
     flex-direction: column;
     justify-content: center;
     gap: 45px;
+
 }
 
 .loginup-links li{
@@ -88,7 +93,7 @@ a{
     flex-direction: column;
     gap: 15px;
     
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .other-links ul a{
@@ -112,7 +117,7 @@ a{
 
     <!-- Right side - side bar -->
     <input type="checkbox" id="back-home" value="" name="" >
-    <section class="sidebar-container" style="background: black; height: 100vh;">
+    <section class="sidebar-container" style="background: black; ">
         <!-- Cancel Icon container -->
         <div class="back-home-container">
             <label for="back-home" aria-label="back to home">
@@ -136,7 +141,7 @@ a{
             </section> <div class="optional-line"></div>
 
             <!-- Other links -->
-            <section class="other-links">
+            <section class="other-links" style="">
                 <ul>
                     <li>
                         <a href="#">Premium</a>
@@ -152,6 +157,30 @@ a{
                     </li>
                     <li>
                         <a href="#">Terms</a>
+                    </li>
+                    <li>
+                        <a href="#">Media</a>
+                    </li>
+                    <li>
+                        <a href="#">Global</a>
+                    </li>
+                    <li>
+                        <a href="#">Rating</a>
+                    </li>
+                    <li>
+                        <a href="#">Language</a>
+                    </li>
+                    <li>
+                        <a href="#">Material</a>
+                    </li>
+                    <li>
+                        <a href="#">Awards</a>
+                    </li>
+                    <li>
+                        <a href="#">iPad Ios</a>
+                    </li>
+                    <li>
+                        <a href="#">Laptop</a>
                     </li>
                 </ul>
             </section>
