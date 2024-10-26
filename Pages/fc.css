@@ -33,6 +33,12 @@ li{
     text-align: center;
 }
 
+.ul-list-container ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .pages-container li:hover a{
     color: white;
 }
