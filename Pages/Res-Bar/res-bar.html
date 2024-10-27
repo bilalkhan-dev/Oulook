@@ -7,31 +7,8 @@
     <meta name="theme-color" content="#fff" >
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="bar.css">
+    <script src="script.js" defer></script>
 
-    <script>
-        
-const searchIconContainer = document.querySelector('.search-icon-container');
-const searchIcon = searchIconContainer.querySelector('i');
-const forLgElements = document.querySelectorAll('.for-lg');
-
-searchIconContainer.addEventListener('click', toggleSearch);
-document.addEventListener('click', outsideClick);
-window.addEventListener('scroll', toggleSearch);
-
-function toggleSearch() {
-  forLgElements.forEach((element) => {
-    element.style.display = element.style.display === 'block' ? 'none' : 'block';
-  });
-  searchIcon.style.display = searchIcon.style.display === 'block' ? 'none' : 'block';
-}
-
-function outsideClick(event) {
-  if (!event.target.classList.contains('for-lg') && !event.target.classList.contains('search-icon-container')) {
-    toggleSearch();
-  }
-}
-
-    </script>
     
 </head>
 <body>
