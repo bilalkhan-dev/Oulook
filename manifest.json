@@ -1,0 +1,2 @@
+
+{    "name": "My Pages",    "short_name": "My Pages",    "start_url": "",    "scope": "/",    "display": "standalone",    "theme_color": "#2563eb",    "background_color": "#FFF",    "icons": [        {            "src": "robo.png",            "sizes": "512x512",            "type": "image/png"        }    ]}
