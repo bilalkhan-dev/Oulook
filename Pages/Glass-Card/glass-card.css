@@ -69,8 +69,7 @@ section .container{
 /*          Targetting the Card            */
 /*--------------------------------------------------*/
 .container .card{
-    width: 85vw;
-    height: 230px;
+    aspect-ratio: 16/9.5;
     max-width: 450px;
 
     color: #fff;
