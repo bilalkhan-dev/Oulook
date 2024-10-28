@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body, html{
+    height: -webkit-fill-available;
+    background: #000;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+/*                            Section Header                             */
+/*----------------------------------------------------------------------*/
+/* Whole Top Bar */
+.sticky-top-bar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    padding: 12px 18px;
+
+    background: rgba(10, 10, 10, 0.7);
+    -webkit-backdrop-filter: blur(60px);
+    backdrop-filter: blur(80px);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Whole Header */
+header{
+    display: flex;
+    justify-content: start;
+}
+
+
+/* Header icon*/
+header img{
+    width: 120px;
+    height: 50px;
+
+    display: inline-block;
+}
+
+
+
+/*                                Nav Bar                                */
+/*----------------------------------------------------------------------*/
+/* All navbar icons */
+.sticky-top-nav svg{
+    fill: white;
+    
+    width: 1rem;
+    height: 1rem;
+}
+
+
+
+/* All divs */
+.sticky-top-nav li div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+/* Open app text */
+.open-app a{
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: black;
+
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    text-align: center;
+
+    background: #fff;
+}
+
+/*             large screen content             */
+.sticky-top-bar .sticky-top-nav .for-lg{
+    display: none;
+}
+
+/* All svgs */
+#for-lg svg{
+    fill: white
+}
+
+/* lg icon wrapper */
+ul li #lg-icon-wrapper{
+    display: flex;
+   /* border: 1px solid white; */
+}
+
+#lg-sign-links{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    font-size: 0.7rem;
+
+    margin-left: 15px;
+
+    /* border: 1px solid white; */
+}
+
+/* Un-orderl-list */
+.sticky-top-nav ul{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/* Large screen home icon */
+.home-icons{
+   background: #2c2525;
+   padding: 16px;
+   border-radius: 50%;
+}
+
+.right-container{
+   margin-left: 14px;
+}
+
+.right-container .lg-search-area{
+    background: #2c2525;
+    padding: 16px;
+    border-radius: 50%;
+}
+
+.sticky-top-bar .sticky-top-nav #for-lg-1{
+    display: none;
+}
+
+.sticky-top-bar .sticky-top-nav #for-lg-2{
+    display: none;
+}
+
+/* sign in sign up links */
+.for-lg div h2{
+    padding: 16px 25px;
+}
+
+.for-lg .signin-div h2{
+    background-color: #fff;
+    border-radius: 120px;
+}
+
+/* log in */
+.for-lg .signin-div a{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+/*                              Media Queries                            */
+/*----------------------------------------------------------------------*/
+
+/* For large Screens */
+@media (min-width: 766px){
+    /* Small screen contents */
+    .sticky-top-bar .sticky-top-nav .for-sm{
+       display: none;
+       position: absolute;
+    }
+
+    .not-for-lg{
+        display: none;
+    }
+
+    /* Large screen content */
+    .sticky-top-bar .sticky-top-nav #for-lg-1{
+        display: block;
+    }
+    
+    .sticky-top-bar .sticky-top-nav #for-lg-2{
+        display: block;
+    }
+
+    /* Whole top bar */
+    .sticky-top-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sticky-top-nav{
+        width: 100%;
+    }
+
+
+
+}
