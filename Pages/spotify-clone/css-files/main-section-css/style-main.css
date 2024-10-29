@@ -3,7 +3,6 @@
     padding: 0;
 
     box-sizing: border-box;
-    font-family: "poppins", sans serif;
 }
 
 html{
@@ -18,9 +17,10 @@ main{
 }
 
 
-/*                            Artists section                            */
+
+/*                            All sections                            */
 /*----------------------------------------------------------------------*/
-.artists-section{
+.identical-section{
     color: #fff;
 
     ::-webkit-scrollbar{
@@ -28,10 +28,11 @@ main{
     }
     
     width: 100%;
+    margin-bottom: 55px;
 }
 
 /* Profile + title */
-.artists-container{
+.identical-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +40,7 @@ main{
 }
 
 /* Artists profile container */
-.artists-profile-container
+.identical-profile-container
 {
     display: flex;
 
@@ -50,7 +51,7 @@ main{
 }
 
 /* artists section h 1 */
-.artists-container h1{
+.identical-container h1{
     font-size: 1.2rem;
     font-weight: 700;
     font-family: "poppins", sans-serif;
@@ -59,7 +60,7 @@ main{
 }
 
 /* artists section images */
-.artists-container img{
+.identical-container img{
     width: 150px;
 
     scroll-snap-align: center;
@@ -70,12 +71,36 @@ main{
     border-radius: 4px;
 }
 
-.artists-container img, .artists-container h2{
+.identical-container img, .identical-container h2{
     margin-left: 16px;
     font-size: 0.9rem;
     font-weight: 550;
 }
 
-.artists-container h2{
+.identical-container h2{
     margin-top: 11px;
 }
+
+/*     Large screen content styling    */
+/* section expanding link */
+.identical-title{
+    display: flex;
+    align-items: center;
+}
+
+.identical-title h1{
+    border: 1px solid white;
+}
+
+.identical-title span{
+    display: inline-block;
+    height: 30px;
+    border: 2px solid white;
+}
+
+
+.identical-title a{
+    font-size: 1rem;
+    border: 1px solid white;
+}
+
