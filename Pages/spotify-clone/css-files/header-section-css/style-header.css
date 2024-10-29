@@ -7,7 +7,6 @@
 }
 
 body, html{
-    /* height: -webkit-fill-available; */
     background: #000;
 }
 
@@ -52,8 +51,8 @@ header{
 
 /* Header icon*/
 header svg{
-    width: 130px;
-    height: 40px;
+    width: 140px;
+    height: 50px;
 
     size: 100px;
 
@@ -101,10 +100,6 @@ header svg{
 }
 
 /*             large screen content             */
-.sticky-top-bar .sticky-top-nav .for-lg{
-    display: none;
-}
-
 /* All svgs */
 #for-lg svg{
     fill: white
@@ -113,18 +108,17 @@ header svg{
 /* lg icon wrapper */
 ul li #lg-icon-wrapper{
     display: flex;
+    align-items: center;
+    justify-content: start;
    /* border: 1px solid white; */
 }
 
 #lg-sign-links{
     display: flex !important;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-between;
 
-    font-size: 0.7rem;
-
-    margin-left: 15px;
+    font-size: 0.6rem;
 
     /* border: 1px solid white; */
 }
@@ -133,13 +127,12 @@ ul li #lg-icon-wrapper{
 .sticky-top-nav ul{
    display: flex;
    align-items: center;
-   justify-content: space-between;
 }
 
 /* Large screen home icon */
 .home-icons{
    background: #2c2525;
-   padding: 16px;
+   padding: 15px;
    border-radius: 50%;
 }
 
@@ -155,20 +148,22 @@ ul li #lg-icon-wrapper{
 
 .sticky-top-bar .sticky-top-nav #for-lg-1{
     display: none;
+    
 }
 
 .sticky-top-bar .sticky-top-nav #for-lg-2{
     display: none;
+    width: 230px;
 }
 
 /* sign in sign up links */
 .for-lg div h2{
-    padding: 16px 25px;
+    padding: 8px 12px;
 }
 
 .for-lg .signin-div h2{
     background-color: #fff;
-    border-radius: 120px;
+    border-radius: 110px;
 }
 
 /* log in */
@@ -257,18 +252,15 @@ p:focus{
 
     /* Header Image */
     header svg{
-        width: 30px;
-        height: 30px;
+        width: 150px;
+        height: 50px;
         
        fill: white;
-
-        /* display: inline-block; */
     }
 
     /* Small screen contents */
     .sticky-top-bar .sticky-top-nav .for-sm{
        display: none;
-       position: absolute;
     }
 
     .not-for-lg{
@@ -279,6 +271,25 @@ p:focus{
     .sticky-top-bar .sticky-top-nav #for-lg-1{
         display: block;
     }
+
+    .right-container .lg-search-area{
+        background: #2c2525;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        border-radius: 20px;
+        width: 50%;
+    }
+
+    .home-icons{
+        background: #2c2525;
+        padding: 16px;
+        border-radius: 50%;
+     }
+
+    .right-container{
+        width: 100%;
+    }
     
     .sticky-top-bar .sticky-top-nav #for-lg-2{
         display: block;
@@ -288,17 +299,52 @@ p:focus{
     .sticky-top-bar{
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 
     .sticky-top-nav{
         width: 100%;
     }
 
+   
+
     /*                           Premium card                            */
    /*----------- -------------------------------------------------------*/
    main .premium-card{
-    height: ;
+    height: 16vw;
    }
 
+   .p-card-text a{
+    font-size: 0.92rem;
+    font-weight: 600;
+   }
+
+   .premium-card .p-card-text{
+    align-self: center;
+   }
+
+   .premium-card .p-card-text a{
+    padding: 9px 16px;
+   }
+
+   .p-card-text p{
+    margin-bottom: 22px;
+   }
+
+}
+
+
+/*             Media query for extra large screen                  */
+
+@media (min-width: 1000px){
+    .sticky-top-bar .sticky-top-nav #for-lg-1{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-container .lg-search-area{
+        background: #2c2525;
+       
+        width: 480px;
+    }
 }
