@@ -1,1 +1,57 @@
+/*         Whole Footer         */
+footer{
+    font-family: "poppins", sans-serif;
+    color: white;
 
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* All list items */
+footer li{
+    margin: 12px 0px;
+    font-size: 0.86rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+a{
+    transition-property: underline;
+    transition-duration: 0.6s;
+    transition-delay: 0s;
+
+    color: #b3b3a4;
+}
+
+footer li a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Social Medai Links */
+.social-links ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 5px;
+    margin-bottom: 25px;
+}
+
+.social-links svg{
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+.social-links li{
+    /* background: #72727215; */
+
+    /* padding: 12px 12px; */
+
+    font-size: 1.5rem;
+    color: white;
+}
