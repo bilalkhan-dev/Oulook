@@ -20,7 +20,7 @@ footer li{
     cursor: pointer;
 }
 
-a{
+footer a{
     transition-property: underline;
     transition-duration: 0.6s;
     transition-delay: 0s;
