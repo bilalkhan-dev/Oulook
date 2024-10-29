@@ -86,21 +86,18 @@ main{
 .identical-title{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-
-.identical-title h1{
-    border: 1px solid white;
-}
-
-.identical-title span{
-    display: inline-block;
-    height: 30px;
-    border: 2px solid white;
-}
-
 
 .identical-title a{
     font-size: 1rem;
-    border: 1px solid white;
+    line-height: 26px;
+    font-weight: 400;
+
+    display: none;
+
+    cursor: pointer;
+
+    margin-right: 15px;
 }
 
