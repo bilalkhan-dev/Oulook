@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="css-files/main-section-css/style-main.css" >
     <link rel="stylesheet" href="css-files/footer-section-css/style-footer.css">
 
-
+<!--    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap');
-    </style>
+    </style> -->
 </head>
 <body>
     
+    <!------------------------------ Top navigation Bar ------------------------------------->
     <div class="sticky-top-bar">
         <header>
             <h1 aria-label="Spotify"></h1>
@@ -115,12 +116,13 @@
         </section>
 
         <!-------------------------- Spotify popular artists Section ---------------------------->
-        <section aria-label="Spotify popular artists" class="artists-section">
-            <div class="artists-container">
-                <div class="artists-title">
+        <section aria-label="Spotify popular artists" class="identical-section" id="artistis-section">
+            <div class="identical-container" id="artists-container">
+                <div class="identical-title" id="section-title">
                     <h1>Popular Artists</h1>
+                    <a href="#" id="expand-link-lg">Show all</a>
                 </div>
-                <div class="artists-profile-container">
+                <div class="identical-profile-container" id="artists-profile-container">
                     <div class="artist-1">
                         <a href="#" title="link to pritum profile">
                             <span class="artist-img">
@@ -284,6 +286,522 @@
                 </div>
             </div>
         </section>
+
+
+         <!-------------------------- Spotify popular albums Section ---------------------------->
+         <section aria-label="Spotify popular albums" class="identical-section" id="albums-section" >
+            <div class="identical-container" id="albums-container">
+                <div class="identical-title" id="section-title">
+                    <h1>Popular Albums</h1>
+                    <a href="#" id="expand-link-lg" class="expand-link-lg">Show all
+                    </a>
+                </div>
+                <div class="identical-profile-container" id="artists-profile-container">
+                    <div class="artist-1">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/ju-tum.png" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Jo Tum Mere Ho</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-2">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/glory.jpeg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>GLORY</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-3">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/1000_F_817240239_4EthuXd7exl23SUd5SsZsLrTPwKOgrwx.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Making Memories</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-4">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/jhol.jpeg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Jhol</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-5">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/1000_F_939301232_Wmf41CpraQ0xsXyKZdvnTF76riz7dtHp.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Still Rollin</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-6">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/19d6f7059d28d8e1efb00cca1d467026.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Moosetape</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-7">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/1dc501fc7460df6d203761ebdec38a96.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Ghost</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-8">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/240_F_267432896_b983PzzgzayW8Ux88dOjVvi2gQ35XC0z.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>ROCKSTAR WITHOUT A GUITAR</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-9">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/240_F_329577224_U3PbWc6vfa6pTZ1SiTF2fWJzfzqu75GS.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Open letter</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-10">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/240_F_441905330_PhUCcCWoHev5dPMtplewUaPTYXFpdXIV.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>The Browprint</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-11">
+                        <a href="#" title="link to pritum profile">
+                            <span class="al-img">
+                                <img src="images/album-images/240_F_934876701_R8Nov6mzigE3C6pRIkVoIDVNiCh6SnOM.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Aashiqui 2</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-12">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/240_F_540130251_bd6t3JG5FgnP3oMFxFAVmiid5YewLVJ1.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Yeh Jawaani Hai Deewani</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-13">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/240_F_566810017_I6m1afXx9P8Zykq9yqSBhiiqwrnxekos.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Maybe, It's Love</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-14">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/240_F_660081920_KjN88fRrvItqxofUFaLv99zxTpLB385y.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>HIT ME HARD AND SOFT</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-15">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/240_F_697744945_PP7tiHJQjPYQZt79COuOU3o4dnYNjsSR.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>ghosts,and goodbyes</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-16">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/album-images/240_F_765045816_F9zIQkosYj6ye9EWiSY0tx4We48Vv0XQ.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Samjho Na</h2>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        
+        
+        <!-------------------------- Spotify popular radio Section ---------------------------->
+         <section aria-label="Spotify popular Radio" class="identical-section" id="albums-section" >
+            <div class="identical-container" id="radio-container">
+                <div class="identical-title" id="section-title">
+                    <h1>Popular radio</h1>
+                    <a href="#" id="expand-link-lg" class="expand-link-lg">Show all
+                    </a>
+                </div>
+                <div class="identical-profile-container" id="artists-profile-container">
+                    <div class="artist-1">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/16c4c17f98ead64006385360380afa03.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>ArijitSingh Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-2">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/240_F_511540035_HegiAYdF9P0CVRyaqM26U3yqm8gzZA9E.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Kaifi Khalil Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-3">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/240_F_766517641_V8Y9QR2SZpHEk22yZ46N04neZyDagMLg (1).jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Diljit Dosajh Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-4">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/e166d5e73ba136d985eddb5aa6fbfec7.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Talha Anjum Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-5">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/240_F_797084168_sa0LH9lt0IbsAJGfHe7g2bulNeZcD3ow.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>AP Dhillon Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-6">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/240_F_800006866_ql8tPN27Yry6sTW9t2nBHi34BacclRkz (1).jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Sidh Moose wala Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-7">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/black-indie-rock-album-cover-design-template-0f2673ea02fc81aa614487b71977a22d_screen.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Nusrat Fateh Ali Khan Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-8">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/240_F_817170337_WzJwuCqpoyb5xu1UWDT3qUO676lcndnU.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Atif Aslam Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-9">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/240_F_836637595_frul7TLEoqLwtMoJ9ncvbZiZUik62MMs.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Shubh Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-10">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/240_F_840539285_OStdOEXbTJ4urJa003VUgS1oIOKMLU4D.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Karan aujla Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-11">
+                        <a href="#" title="link to pritum profile">
+                            <span class="al-img">
+                                <img src="images/radio-images/240_F_874747216_vFi3lRuPMMpKgZ2miUqsJD02fX4waHDs.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Talwiinder Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-12">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/240_F_918487532_MLIslCDsZTqIA8wdxx0SQcdNm1z5IoMb.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Rahat Fateh Ali Khan</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-13">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/240_F_955232558_X4TjicKKTEGECBtGiUr2pRbaWoNiIKth.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Neha Kakkar Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-14">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/240_F_961343802_6fNXrj2nl0lzLaASiW7V5vFuKWmiUQHx.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Anuv Jain Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-15">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/240_F_993218164_JsjY55hXQmXmAZaJ7N3ibkMsYTLO34Z4.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Qurataulain Balouch Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-16">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/radio-images/5783d7d15a0020396f67e7050c1ad4a7.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Faris Shafi Radio</h2>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-------------------------- Spotify featured chart section ---------------------------->
+        <section aria-label="Featured charts" class="identical-section" id="albums-section" >
+            <div class="identical-container" id="featured-container">
+                <div class="identical-title" id="section-title">
+                    <h1>Featured Charts</h1>
+                    <a href="#" id="expand-link-lg" class="expand-link-lg">Show all
+                    </a>
+                </div>
+                <div class="identical-profile-container" id="artists-profile-container">
+                    <div class="artist-1">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/top-images/a708bc13786ad12ecd9e0e9db0642b7d.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Top-50 Global</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-2">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/top-images/a7a8caae012391cebae4049487216240.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Top-100 Global</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-3">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/top-images/bba2950b4623ba4802a70f37f3f62822.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Top-50 USA</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-4">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/top-images/d1b22405b8e8ec7c316afec240a422ff.jpg">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Top-100 USA</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-5">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/top-images/dbdc24531f56b64e7e04dd60b1b856c5.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Viral-50 Global</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-6">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/top-images/e93df6dd81b3f433c306315a34c7fc6f.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Viral-50 USA</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-7">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/top-images/fb833c29180638ed1409c50e985f00df.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Viral</h2>
+                            </span>
+                        </a>
+                    </div>
+            </div>
+        </section>
+
+
+         <!-------------------------- Spotify our editor section ---------------------------->
+         <section aria-label="Featured charts" class="identical-section" id="albums-section" >
+            <div class="identical-container" id="oureditor-container">
+                <div class="identical-title" id="section-title">
+                    <h1>Playlists from our Editors</h1>
+                    <a href="#" id="expand-link-lg" class="expand-link-lg">Show all
+                    </a>
+                </div>
+                <div class="identical-profile-container" id="artists-profile-container">
+                    <div class="artist-1">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/our-editor-images/1a9c79e8055be1c66885cdebdabc2ef8.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Chilled Clasic</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-2">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/our-editor-images/1b894752a3f0e682c0df277dd9ee1f53.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Mega Hit Mix</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-3">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/our-editor-images/3a6406aa0409220ccc95286e061c571b.jpg">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Peaceful Piano</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-4">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/our-editor-images/44635f30ed6ebefcf3a40c1c79c4dfdf.jpg">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Phonk</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-5">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/our-editor-images/7bfe92b5f701f5022aa6012b36fbb05b.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Chilled R&B</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-6">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/our-editor-images/8f64878edbec5d2273394380a78c8427.jpg" alt="pritam image">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Today's top Hits</h2>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="artist-7">
+                        <a href="#" title="link to pritum profile">
+                            <span class="artist-img">
+                                <img src="images/our-editor-images/9833a13004cd0f391f91d06132e867e3.jpg">
+                            </span>
+                            <span class="artist-name">
+                                <h2>Lofi's Beats</h2>
+                            </span>
+                        </a>
+                    </div>
+            </div>
+        </section>
+
+       
 
     </main>
 
