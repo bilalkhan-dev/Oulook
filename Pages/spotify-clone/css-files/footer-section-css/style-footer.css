@@ -11,6 +11,7 @@ footer{
     gap: 2rem;
 }
 
+
 /* All list items */
 footer li{
     margin: 12px 0px;
@@ -38,7 +39,7 @@ footer li a:hover{
     align-items: center;
     gap: 40px;
     margin-left: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 17px;
 }
 
 .social-links svg{
@@ -54,4 +55,24 @@ footer li a:hover{
 
     font-size: 1.5rem;
     color: white;
+}
+
+
+.copyright-text{
+    color: #b3b3a4; 
+    margin: 18px 22px;
+
+}
+
+.copyright-text p{
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+hr{
+    width: 90%;
+    color: #25252210;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
