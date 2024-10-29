@@ -177,11 +177,73 @@ ul li #lg-icon-wrapper{
 }
 
 
-@media (min-width: 910px){
-
+/*                           Premium card                                */
+/*----------------------------------------------------------------------*/
+#close-banner{
+    display: none;
 }
 
+#close-banner:checked + section{
+    display: none;
+}
 
+.premium-card svg{
+    width: 13px;
+}
+
+main .premium-card{
+    background: #ffced5;
+
+    padding: 15px 14px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.premium-card .p-card-text{
+    margin-right: 20px;
+    padding-bottom: 5px;
+}
+
+.p-card-text p, .p-card-text h1{
+    font-family: "poppins", sans-serif;
+}
+
+.p-card-text p{
+    font-size: 0.9rem;
+    margin-top: 4.2px;
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+
+.premium-card h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.premium-card .cancel-icon-cont{
+    align-self: flex-end;
+}
+
+.p-card-text a{
+    background: #000;
+    font-size: 0.8rem;
+    font-weight: 550;
+
+    margin-bottom: 7px;
+    padding: 7px 13px;
+    border-radius: 20px;
+}
+
+p:focus{
+    outline: none;
+    text-align: justify;
+    line-height: 25px;
+
+    caret-color: blue;
+}
 
 
 
@@ -233,6 +295,10 @@ ul li #lg-icon-wrapper{
         width: 100%;
     }
 
-
+    /*                           Premium card                            */
+   /*----------- -------------------------------------------------------*/
+   main .premium-card{
+    height: ;
+   }
 
 }
