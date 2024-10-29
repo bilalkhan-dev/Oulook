@@ -1,1 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
 
+    box-sizing: border-box;
+    font-family: "poppins", sans serif;
+}
+
+html{
+    height: 100%;
+}
+
+
+/*                                Page Main                              */
+/*----------------------------------------------------------------------*/
+main{
+    width: 100%;
+}
+
+
+/*                            Artists section                            */
+/*----------------------------------------------------------------------*/
+.artists-section{
+    color: #fff;
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    
+    width: 100%;
+}
+
+/* Profile + title */
+.artists-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15.5px;
+}
+
+/* Artists profile container */
+.artists-profile-container
+{
+    display: flex;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    
+}
+
+/* artists section h 1 */
+.artists-container h1{
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: "poppins", sans-serif;
+
+    margin: 10px 0 5px 15.5px;
+}
+
+/* artists section images */
+.artists-container img{
+    width: 150px;
+
+    scroll-snap-align: center;
+
+    aspect-ratio: 16/15.8;
+    object-fit: cover;
+
+    border-radius: 4px;
+}
+
+.artists-container img, .artists-container h2{
+    margin-left: 16px;
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+
+.artists-container h2{
+    margin-top: 11px;
+}
