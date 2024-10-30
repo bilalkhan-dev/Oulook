@@ -9,16 +9,13 @@ html{
     height: 100%;
 }
 
-::-webkit-scrollbar{
-        display: none;
-    }
-
 
 /*                                Page Main                              */
 /*----------------------------------------------------------------------*/
-main{
-    width: 100%;
+body{
+    background: black;
 }
+
 
 
 
@@ -105,3 +102,66 @@ main{
     margin-right: 15px;
 }
 
+
+/* Due to issu ??? */
+.lg-left-container{
+    display: none;
+}
+
+
+
+
+/*                          Media Queries                       */
+/*-------------------------------------------------------------*/
+@media (min-width: 930px){
+    /*                   styling main for large screen                     */
+    #lg-container{
+        display: grid;
+        grid-template-columns: minmax(300px, 410px)
+        minmax(600px, 970px);
+        grid-template-rows: auto max-content;
+        gap: 9px;
+
+        position: fixed;
+        top: 75px;
+        left: 10px;
+        right: 10px;
+        bottom: 8px;
+
+        max-height: 90vh;
+    }
+
+    .lg-left-container{
+        background: #121212;
+        border-radius: 8px;
+        display: block;
+    }
+
+
+    .section-main{
+        overflow: auto;
+        max-height: 90vh;
+        background: #121212;
+
+        border-radius: 8px;
+    }
+
+
+    .section-main .premium-card{
+        display: none;
+    }
+
+
+    /* all section */
+    .lg-right-container .identical-profile-container
+    {
+        overflow: hidden;
+    }
+
+    #expand-link-lg{
+        display: block;
+    }
+
+    
+
+}
