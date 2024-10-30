@@ -108,7 +108,44 @@ body{
     display: none;
 }
 
+/*              Left Aside            */
+aside{
+    color: white;
+}
 
+.aside-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 15px;
+}
+
+.aside-title{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
+.aside-header h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.aside-header svg{
+    width: 23px;
+    fill: #b3b3a4;
+}
+
+.creat-play svg{
+    width: 30px;
+}
+
+/*         Aside Scrollable container                */
+.aside-scroll-cont div{
+    background: #1f1f1f;
+}
 
 
 /*                          Media Queries                       */
@@ -151,6 +188,26 @@ body{
         display: none;
     }
 
+    /*               Sections Images Div appreaing                   */
+    .identical-profile-container div{
+        display: none;
+    }
+    .identical-profile-container  :nth-child(1), .identical-profile-container :nth-child(2), .identical-profile-container :nth-child(3){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .identical-container img{
+        border-radius: 50%;
+
+        aspect-ratio: 8/8;
+        margin-left: 5vw;
+    }
+
+
 
     /* all section */
     .lg-right-container .identical-profile-container
@@ -165,3 +222,10 @@ body{
     
 
 }
+
+
+@media (min-width: 1290px){
+    /*               Sections Images Div appreaing                   */
+    .identical-profile-container :nth-child(4){
+        display: flex;
+    }
